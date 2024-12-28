@@ -17,10 +17,10 @@ function Clicked() {
     DOutput.textContent = `D = b^2 - 4 * a * c = ${BInput}^2 - 4 * ${AInput} * ${CInput} = ${dis}`;
     if (dis >= 1) {
         dis1 = Math.sqrt(dis);
-        x1 = BInput * (-1) - Math.sqrt(dis);
+        x1 = BInput * (-1) - dis1;
         x1 = x1 / 2 * AInput;
         X1Output.textContent = `x1 = -b - √D / 2 * a = -${BInput} - ${dis1} / 2 * ${AInput} = ${x1}`;
-        x2 = BInput * (-1) + Math.sqrt(dis);
+        x2 = BInput * (-1) + dis1;
         x2 = x2 / 2 * AInput;
         X2Output.textContent = `x2 = -b + √D / 2 * a = -${BInput} + ${dis1} / 2 * ${AInput} = ${x2}`;
         Answer.textContent = `Ответ: x1 = ${x1}, x2 = ${x2}`;
@@ -32,7 +32,7 @@ function Clicked() {
     else {
         X1Output.textContent = 'D = 0. Нахожу только x1...'
         dis1 = Math.sqrt(dis);
-        x1 = BInput * (-1) - Math.sqrt(dis);
+        x1 = BInput * (-1) - dis1;
         x1 = x1 / 2 * AInput;
         X2Output.textContent = `x1 = -b - √D / 2 * a = -${BInput} - ${dis1} / 2 * ${AInput} = ${x1}`;
         Answer.textContent = `Ответ: x1 = ${x1} (т.к D = 0)`;
