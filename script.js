@@ -15,7 +15,7 @@ function Clicked() {
     POutput.textContent = AInput && BInput && CInput ? `${AInput} x^2 + ${BInput} x + ${CInput} = 0` : 'Пожалуйста, введите значения для: A, B, C! ';
     dis = BInput * BInput - 4 * AInput * CInput;
     DOutput.textContent = `D = b^2 - 4 * a * c = ${BInput}^2 - 4 * ${AInput} * ${CInput} = ${dis}`;
-    console.log(DOutput);
+    console.log(DOutput.textContent);
     if (dis >= 1) {
         dis1 = Math.sqrt(dis);
         x1 = BInput * (-1) - dis1;
