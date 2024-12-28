@@ -15,26 +15,35 @@ function Clicked() {
     POutput.textContent = AInput && BInput && CInput ? `${AInput} x^2 + ${BInput} x + ${CInput} = 0` : 'Пожалуйста, введите значения для: A, B, C! ';
     dis = BInput * BInput - 4 * AInput * CInput;
     DOutput.textContent = `D = b^2 - 4 * a * c = ${BInput}^2 - 4 * ${AInput} * ${CInput} = ${dis}`;
+    console.log(DOutput);
     if (dis >= 1) {
         dis1 = Math.sqrt(dis);
         x1 = BInput * (-1) - dis1;
         x1 = x1 / 2 * AInput;
         X1Output.textContent = `x1 = -b - √D / 2 * a = -${BInput} - ${dis1} / 2 * ${AInput} = ${x1}`;
+        console.log(X1Output);
         x2 = BInput * (-1) + dis1;
         x2 = x2 / 2 * AInput;
         X2Output.textContent = `x2 = -b + √D / 2 * a = -${BInput} + ${dis1} / 2 * ${AInput} = ${x2}`;
+        console.log(X2Output);
         Answer.textContent = `Ответ: x1 = ${x1}, x2 = ${x2}`;
+        console.log(Answer);
     }
     else if (dis <= 0) {
         X1Output.textContent = 'Нет решения! D = 0';
+        console.log(X1Output);
         Answer.textContent = '∅';
+        console.log(Answer);
     }
     else {
         X1Output.textContent = 'D = 0. Нахожу только x1...'
+        console.log(X1Output);
         dis1 = Math.sqrt(dis);
         x1 = BInput * (-1) - dis1;
         x1 = x1 / 2 * AInput;
         X2Output.textContent = `x1 = -b - √D / 2 * a = -${BInput} - ${dis1} / 2 * ${AInput} = ${x1}`;
+        console.log(X2Output);
         Answer.textContent = `Ответ: x1 = ${x1} (т.к D = 0)`;
+        console.log(Answer);
     }
 }
