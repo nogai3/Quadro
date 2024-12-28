@@ -18,8 +18,14 @@ input {
 
 button {
     margin-top: 10px;
+    background-color: #0073e6;
+    color: white;
     font-family: 'Krona One', monospace;
     font-size: 16px;
+}
+
+button:hover {
+  background-color: #0073e6;
 }
 
 h1 {
