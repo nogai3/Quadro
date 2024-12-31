@@ -30,7 +30,7 @@ function Clicked() {
         console.log(Answer.textContent);
     }
     else if (dis <= 0) {
-        X1Output.textContent = 'Нет решения! D = 0';
+        X1Output.textContent = 'Нет решения! D < 0';
         console.log(X1Output.textContent);
         Answer.textContent = '∅';
         console.log(Answer.textContent);
