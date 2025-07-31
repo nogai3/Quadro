@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
     width: 350px;
@@ -6,23 +6,22 @@ body {
 }
 
 p {
-    font-family: 'Krona One', monospace;
+    font-family: 'Roboto', monospace;
     font-size: 16px;
 }
 
 input {
-    margin-bottom: 25px;
-    font-family: 'Krona One', monospace;
+    margin-bottom: 10px;
+    font-family: 'Roboto', monospace;
     font-size: 16px;
 }
 
 button {
-    margin-top: 10px;
     background-color: #0073e6;
     color: white;
     border: none;
     cursor: pointer;
-    font-family: 'Krona One', monospace;
+    font-family: 'Roboto', monospace;
     font-size: 16px;
 }
 
@@ -31,5 +30,10 @@ button:hover {
 }
 
 h1 {
-    font-family: 'Krona One', monospace;
+    font-family: 'Roboto', monospace;
+}
+
+summary {
+    font-family: 'Roboto', monospace;
+    cursor: pointer;
 }
